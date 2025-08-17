@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ToDoPage.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -9,24 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Flutter Demo', home: MyHomePage());
+    return MaterialApp(
+        debugShowCheckedModeBanner:false,title: 'To Do', home: Todopage());
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
-  @override
-  State<StatefulWidget> createState() {
-    return _MyHomePage();
-  }
-}
-
-class _MyHomePage extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-
-    );
-  }
-}
